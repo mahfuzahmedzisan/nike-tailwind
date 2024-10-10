@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .container{
+      @apply max-w-screen-3xl;
+   }
+
+   header .top-nav-link{
+      @apply text-text-primary text-xs tracking-tight font-semibold relative after:absolute after:-right-2 after:top-1/2 after:-translate-y-1/2 after:w-0.5 after:h-full after:bg-slate-600 after:transition-all after:duration-300 last:after:hidden hover:text-text-secondary;
+   }
+
+   header .nav-icon{
+      @apply text-text-primary text-xl px-3 py-2 hover:bg-bg-tertiary rounded-full;
+   }
+   header .main-nav-link{
+      @apply text-2xl after:text-lg font-medium my-3 block after:absolute after:content-['\f105'] after:font-FontAwesome after:right-0  after:top-1/2 after:-translate-y-1/2 text-text-primary hover:text-text-secondary 2md:my-0 2md:after:content-[''] 2md:after:w-full 2md:after:h-0.5 2md:after:bg-text-primary 2md:after:top-full 2md:after:translate-y-0 2md:after:hidden 2md:hover:after:block
+      2md:hover:text-text-primary;
+   }
+   #close-menu i{
+      @apply text-2xl;
+   }
+}
